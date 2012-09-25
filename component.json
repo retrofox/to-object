@@ -1,0 +1,9 @@
+{
+  "name": "array-to-object",
+  "repo": "retrofox/array-to-object",
+  "description": "Converts an array to object",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {}
+}
