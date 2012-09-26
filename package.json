@@ -1,6 +1,6 @@
 
 {
-  "name": "array-to-object",
+  "name": "to-object",
   "version": "0.0.1",
   "description": "Converts an array to object",
   "keywords": [

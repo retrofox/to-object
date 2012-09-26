@@ -9,10 +9,10 @@
  * Expose `Dropdown`.
  */
 
-module.exports = arrayToObject;
+module.exports = toObject;
 
 /**
- * arrayToObject
+ * toObject
  *
  * @param {Array} array array to convert
  * @param {String} key (optional)
@@ -21,7 +21,7 @@ module.exports = arrayToObject;
  * @return {Object}
  */
 
-function arrayToObject(array, key, removeKeyItem, fn) {
+function toObject(array, key, removeKeyItem, fn) {
   var obj = {};
   fn = 'function' == typeof removeKeyItem ? removeKeyItem : fn;
   removeKeyItem = 'function' == typeof removeKeyItem ? false : removeKeyItem;
