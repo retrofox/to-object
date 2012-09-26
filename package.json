@@ -1,0 +1,18 @@
+
+{
+  "name": "array-to-object",
+  "version": "0.0.1",
+  "description": "Converts an array to object",
+  "keywords": [
+    "component",
+    "array",
+    "object"
+  ],
+  "author": "Damian Suarez <rdsuarez@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "index"
+}
