@@ -1,7 +1,7 @@
 
-# to-object
+# toObject
 
-  to-object utility
+  toObject array utility. Creats an object with the given array.
 
 ## Installation
 
@@ -9,44 +9,59 @@
 
 ## API
 
-### to-object(array)
+### toObject(array)
 
   Returns an `object`
 
 ```js
+var toObject = require('to-object');
 
 var heroes = [
-    {
-      first: 'Manuel',
-      last: 'Belgrano'
-    },
-     {
-       first: 'Juan Jose',
-       last: 'San Martin'
-     },
-    {
-      first: 'Hipolito',
-      last: 'Bouchard'
-    },
-    {
-      first: 'Martin Miguel',
-      last: 'de Güemes'
-    }
-  ];
+  {
+    first: 'Manuel',
+    last: 'Belgrano'
+  },
+   {
+     first: 'Juan Jose',
+     last: 'San Martin'
+   },
+  {
+    first: 'Hipolito',
+    last: 'Bouchard'
+  },
+  {
+    first: 'Martin Miguel',
+    last: 'de Güemes'
+  }
+];
 
 // returns an object with number key
-var heroesObject = to-object(heroes);
+var heroesObject = toObject(heroes);
 
 // return an object with first value as key
-var heroesObject = to-object(heroes, 'first');
+var heroesObject = toObject(heroes, 'first');
 
 // return an object with first value as key and remove the key
-var heroesObject = to-object(heroes, 'first', true);
+var heroesObject = toObject(heroes, 'first', true);
 
 // return an object with first value modified as key
-var heroesObject = to-object(heroes, 'first', function(key){
+var heroesObject = toObject(heroes, 'first', function(key){
   return key.toLowerCase().replace(/\s/i, '_');
 });
+```
+
+## Running tests
+
+Make sure dependencies are installed:
+
+```
+$ npm install
+```
+
+Then run:
+
+```
+$ make test
 ```
 
 # License
