@@ -1,9 +1,10 @@
 {
   "name": "to-object",
-  "repo": "RetroFOX/to-object",
-  "description": "Converts an array to object",
-  "version": "0.0.1",
+  "repo": "retrofox/to-object",
+  "description": "Converts array to object",
   "author": "Damian Suarez <rdsuarez@gmail.com>",
+  "twitter": "retrofox",
+  "version": "0.0.1",
   "keywords": [],
   "devDependencies":  {
     "mocha": "*",
