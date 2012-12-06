@@ -37,37 +37,69 @@ var heroes = [
 
 // returns an object with number key
 var heroesObject = toObject(heroes);
+/*
+{
+  0: { first: 'Manuel', last: 'Belgrano' },
+  1: { first: 'Juan Jose', last: 'San Martin' },
+  2: { first: 'Hipolito', last: 'Bouchard' },
+  3: { first: 'Martin Miguel', last: 'de Güemes' }
+}
+*/
 
 // return an object with first value as key
 var heroesObject = toObject(heroes, 'first');
+/*
+{
+  'Manuel': { first: 'Manuel', last: 'Belgrano' },
+  'Juan Jose': { first: 'Juan Jose', last: 'San Martin' },
+  'Hipolito': { first: 'Hipolito', last: 'Bouchard' },
+  'Martin Miguel': { first: 'Martin Miguel', last: 'de Güemes' }
+}
+*/
 
 // return an object with first value as key and remove the key
 var heroesObject = toObject(heroes, 'first', true);
+/*
+{
+  'Manuel': { last: 'Belgrano' },
+  'Juan Jose': { last: 'San Martin' },
+  'Hipolito': { last: 'Bouchard' },
+  'Martin Miguel': { last: 'de Güemes' }
+}
+*/
 
 // return an object with first value modified as key
 var heroesObject = toObject(heroes, 'first', function(key){
   return key.toLowerCase().replace(/\s/i, '_');
 });
+/*
+{
+  manuel: { first: 'Manuel', last: 'Belgrano' },
+  juan_jose: { first: 'Juan Jose', last: 'San Martin' },
+  hipolito: { first: 'Hipolito', last: 'Bouchard' },
+  martin_miguel: { first: 'Martin Miguel', last: 'de Güemes' }
+}
+*/
 ```
 
-## Running tests
+## Tests
 
-Make sure dependencies are installed:
-
-```
-$ npm install
-```
-
-Then run:
+Download testing dependecies
 
 ```
-$ make test
+npm install
+```
+
+Run tests
+
+```
+make test
 ```
 
 # License
 
 (The MIT License)
-Copyright(c) 2012 Damian Suarez <rdsuarez@gmail.com>
+Copyright(c) 2012 Damian Suarez &lt;rdsuarez@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
