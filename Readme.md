@@ -68,7 +68,7 @@ var heroesObject = toObject(heroes, 'first', true);
 }
 */
 
-// return an object with first value modified as key
+// return an object with first value modified as key using callback function
 var heroesObject = toObject(heroes, 'first', function(key){
   return key.toLowerCase().replace(/\s/i, '_');
 });
