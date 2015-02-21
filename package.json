@@ -8,6 +8,10 @@
     "array",
     "object"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/retrofox/to-object.git"
+  },
   "author": "Damian Suarez <rdsuarez@gmail.com>",
   "dependencies": {},
   "devDependencies": {
